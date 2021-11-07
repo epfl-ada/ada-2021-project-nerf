@@ -1,7 +1,7 @@
 # Do US politicians care about climate change?
 <!-- omit in toc -->
 
-This team project is a part of the Applied Data Analysis 2021 curriculum at the EPFL.
+This team project is a part of the [Applied Data Analysis 2021](https://dlab.epfl.ch/teaching/fall2021/cs401/) curriculum at the EPFL.
 
 The purpose of this file is to explain the project and help you navigate this repo.
 
