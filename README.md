@@ -9,7 +9,7 @@ The purpose of this file is to explain the project and help you navigate this re
 - [Abstract](#abstract)
 - [Goal](#goal)
 - [Data](#data)
-- [Architecture](#architecture)
+- [Methods](#methods)
 - [Proposed timeline](#proposed-timeline)
 - [Navigating the repo](#navigating-the-repo)
 - [Authors](#authors)
@@ -41,7 +41,7 @@ Certainly, all the above-mentioned questions should be addressed in respect to p
 ## Data
 The data we will use for our analysis consists of:
 - quotes from US politicians published during the period from 2015 to 2020 - acquired from the [Quotebank dataset](https://dlab.epfl.ch/people/west/pub/Vaucher-Spitz-Catasta-West_WSDM-21.pdf)
-- additional metadata about the speakers in the Quotebank dataset - acquired from the [Wikidata knowledge base](https://www.wikidata.org/wiki/Wikidata:Main_Page) and available as a `speaker_attributes.parquet` file on [Google Drive](https://drive.google.com/drive/folders/1VAFHacZFh0oxSxilgNByb1nlNsqznUf0).
+- additional metadata about the speakers in the Quotebank dataset - acquired from the [Wikidata knowledge base](https://www.wikidata.org/wiki/Wikidata:Main_Page) and available as a `speaker_attributes.parquet` file on [Google Drive](https://drive.google.com/drive/folders/1VAFHacZFh0oxSxilgNByb1nlNsqznUf0). In addition to this `.parquet` file, if some extra (Wiki)data is needed it will be acquired through Wikidata SPARQL queries.
 
 
 Given that the Quotebank dataset comprises a huge amount of quotes, it is crucial to filter out all those quotes that are not said by US politicians.
@@ -51,7 +51,7 @@ This is feasible by:
 - removing unnecessary speakers from the `.parquet` file
 - merging the `.parquet` file with the Quotebank dataset
 
-## Architecture
+## Methods
 <!-- todo -->
 
 ## Proposed timeline
