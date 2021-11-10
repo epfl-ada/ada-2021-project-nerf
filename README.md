@@ -55,6 +55,19 @@ This is feasible by:
 <!-- todo -->
 
 ## Proposed timeline
+
+This project should be completed by December 17th. Our proposed timeline can be found in the table below:
+
+| Period                 | Description               |
+| ---------------------- | ------------------------- |
+| 13. Nov - 19. Nov      | Extracting quotes about climate change                                               |
+| 20. Nov - 27. Nov      | Sentiment analysis of extracted quotes                                               |
+| 28. Nov - 07. Dec      | Data analysis and answering questions                                            |
+| 08. Dec - 11. Dec      | Creating data story for visual representation of project's findings                 |
+| 12. Dec - 17. Dec      | Final revisions           |
+| 17. Dec                | Project submission        |
+
+## Organization within the team
 <!-- todo -->
 
 ## Navigating the repo
