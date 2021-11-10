@@ -132,7 +132,7 @@ Our team consists of four members. We intend to work on every milestone in pairs
 ## Navigating the repo
 
 ### `preprocessing`
-    This folder contains all the preprocessing work performed on the input data - both the speakers and quotes are preprocessed.
+- This folder contains all the preprocessing work performed on the input data - both the speakers and quotes are preprocessed.
 
 ## Authors
 - Carevic Filip
