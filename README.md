@@ -19,22 +19,22 @@ Wildfires, hurricanes, droughts - just another regular year on planet Earth. The
 <br><br>
 Climate change is a topic that deeply concerns all of us and potentially the most devastating problem that the humanity has ever faced. Although the impacts of global warming are sporadically occurring, thus providing a false sense of comfort, it is important to address these issues and take action. This is a human responsibility but nonetheless a political one as well.
 <br><br>
-For that reason, we want to analyze how concerned are the US politicians. Are they raising awarenes about the global warming and is fighting climate change a part of their agenda? Or perhaps, is this a topic they would rather sweep under the rug.
+For that reason, we want to analyze how concerned are the US politicians. Are they raising awareness about global warming and is fighting climate change a part of their agenda? Or perhaps, is this a topic they would rather sweep under the rug.
 <br>
 Moreover, we want to investigate whether there are any correlations between specific demographics (e.g. age, education, state of domicile, etc.) and the attitude towards climate change.
 
 ## Goal
-In this project, we aim to analyze quotes from US politicians concerning climate change. This should allow us to paint a picture about the importance of climate change from a politician's point of view.
+In this project, we aim to analyze quotes from US politicians concerning climate change. This should allow us to paint a picture of the importance of climate change from a politician's point of view.
 <br><br>
-In addition to this, we strive to provide answers to following questions:
-- How often does a specific politican give statements about climate change. In other words, what is the ratio between climate change and non-climate change quotes?
+In addition to this, we strive to provide answers to the following questions:
+- How often does a specific politician give statements about climate change. In other words, what is the ratio between climate change and non-climate change quotes?
 - Which politician talks the most about climate change?
 - Can we relate the opinion about climate change towards specific demographic parameters?
 - At what points in time do politicians talk (more) about climate change (e.g. immediately after a disaster)?
 - Which politicians are the first to forget about the problems related to climate change?
-- and many more...
+- and more...
 
-Certainly, all the above-mentioned questions should be addressed in respect to political parties as well.
+Certainly, all the aforementioned questions should be addressed in respect to political parties as well.
 
 ## Data
 The data we will use for our analysis consists of:
@@ -49,18 +49,18 @@ This is feasible by:
 - merging the `.parquet` file with the Quotebank dataset
 
 ## Methods
-In this section we will give an overview of the processing that needs to be done after preprocessing the data but before the data analysis part. Moreover, we will explain the problem-solving process as well as the feasibility of each task.
+In this section, we will give an overview of the processing that needs to be done after preprocessing the data but before the data analysis part. Moreover, we will explain the problem-solving process as well as the feasibility of each task.
 <br><br>
 Processing that needs to be done:
 - extraction of climate change quotes:
     - training a model using `fasttext` with unsupervised learning
-    - generating word embedings from the model
-    - aggregating quotes vectors from the embedings
+    - generating word embeddings from the model
+    - aggregating quotes vectors from the embeddings
     - calculating similarity between the **"climate change"** query vector and the aggregated quotes vectors
     - extraction of most similar quotes based on a threshold <br><br>
-    - feasability
-        - As a prerequisite this extraction we need to make sure that there are enough quotes for training the model. After extracting all the speakers and their quotes that we need for our analysis we gathered an astonishing number over 2 million quotes - which should be more than enough.
-        - In addition to this, there should also be plenty climate change quotes in order to have sufficient data for further analysis. With a simple regex search for _climate change_ we can see a decent number of quotes. It is only natural to assume that a trained model would provide us with even more and better quotes than a regex search.<br><br>
+    - feasibility
+        - As a prerequisite for this extraction, we need to ensure that there are enough quotes for training the model. After extracting all the speakers and their quotes that we need for our analysis we gathered an astonishing number of over 2 million quotes - which should be more than enough.
+        - In addition to this, there should also be plenty of climate change quotes in order to have sufficient data for further analysis. With a simple regex search for _climate change_ we can see a decent number of quotes. It is only natural to assume that a trained model would provide us with even more and better quotes than a regex search.<br><br>
 - sentiment analysis of climate change quotes:
     - todo1
     - todo2
