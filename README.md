@@ -17,14 +17,14 @@ The purpose of this file is to explain the project and help you navigate this re
 ## Abstract
 Wildfires, hurricanes, droughts - just another regular year on planet Earth. The common factor is none other than **climate change**.
 <br><br>
-Climate change is a topic that deeply concerns all of us and potentially the most devastating problem that humanity has ever faced. Although the impacts of global warming are sporadically occurring, thus providing a false sense of comfort, it is important to address these issues and take action. This is a human responsibility as well as a political one.
+Climate change is a topic that deeply concerns us all and is potentially the most devastating problem that humanity will have to face so far. Although the impacts of global warming are sporadically occurring, thus providing a false sense of comfort, it is important to address these issues and take action. This is a human responsibility as well as a political one.
 <br><br>
 For that reason, we want to analyze how concerned are US politicians. Are they raising awareness about global warming and is fighting climate change a part of their agenda? Or perhaps, is this a topic they would rather sweep under the rug?
 <br>
-Moreover, we want to investigate whether there are any correlations between specific demographical features (e.g. age, education, state of domicile, etc.) or political affiliations and the attitude towards climate change.
+Moreover, we want to investigate whether there are any correlations between specific demographical features (e.g. age, education, state of domicile, etc.) or political and business affiliations and the attitude towards climate change.
 
 ## Goal
-In this project, we aim to analyze quotes from US politicians concerning climate change. This should allow us to paint a picture of the importance of climate change from a politician's point of view.
+In this project, we aim to analyze quotes from US politicians concerning climate change. This should allow us to paint a picture of the importance of this problem from a politician's point of view.
 <br><br>
 In addition to this, we strive to provide answers to the following questions:
 - How often does a specific politician give statements about climate change? In other words, what is the ratio between climate change and non-climate change quotes?
