@@ -17,7 +17,7 @@ The purpose of this file is to explain the project and help you navigate this re
 ## Abstract
 Wildfires, hurricanes, droughts - just another regular year on planet Earth. The common factor is none other than **climate change**.
 <br><br>
-Climate change is a topic that deeply concerns all of us and potentially the most devastating problem that humanity has ever faced. Although the impacts of global warming are sporadically occurring, thus providing a false sense of comfort, it is important to address these issues and take action. This is a human responsibility but nonetheless a political one as well.
+Climate change is a topic that deeply concerns all of us and potentially the most devastating problem that humanity has ever faced. Although the impacts of global warming are sporadically occurring, thus providing a false sense of comfort, it is important to address these issues and take action. This is a human responsibility as well as a political one.
 <br><br>
 For that reason, we want to analyze how concerned are US politicians. Are they raising awareness about global warming and is fighting climate change a part of their agenda? Or perhaps, is this a topic they would rather sweep under the rug?
 <br>
@@ -34,7 +34,7 @@ In addition to this, we strive to provide answers to the following questions:
 - Which politicians are the first to forget about the problems related to climate change?
 - and more...
 
-Certainly, all the aforementioned questions should be addressed with respect to political parties as well.
+Certainly, all the aforementioned questions should be addressed considering given political parties as well.
 
 ## Data
 The data we will use for our analysis consists of:
@@ -78,7 +78,7 @@ This project should be completed by December 17th. Our proposed timeline can be 
 | 13. Nov - 19. Nov      | Extracting quotes about climate change                                               |
 | 20. Nov - 27. Nov      | Sentiment analysis of extracted quotes                                               |
 | 28. Nov - 07. Dec      | Data analysis and answering questions                                            |
-| 08. Dec - 11. Dec      | Creating data story for a visual representation of project's findings                 |
+| 08. Dec - 11. Dec      | Creating data story for a visual representation of the project's findings                 |
 | 12. Dec - 17. Dec      | Final revisions           |
 | 17. Dec                | Project submission        |
 
