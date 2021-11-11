@@ -62,9 +62,13 @@ Processing that needs to be done:
         - As a prerequisite for this extraction, we need to ensure that there are enough quotes for training the model. After extracting all the speakers and their quotes that we need for our analysis we gathered an astonishing number of over 2 million quotes - which should be more than enough.
         - In addition to this, there should also be plenty of climate change quotes in order to have sufficient data for further analysis. With a simple regex search for _climate change_ we can see a decent number of quotes. It is only natural to assume that a trained model would provide us with even more and better quotes than a regex search.<br><br>
 - sentiment analysis of climate change quotes:
-    - todo1
-    - todo2
-    - todo3
+    - compare different pretrained sentiment analysis models for this task as some rely on a bag of words approach (NLTK Vader Sentiment) while others a more sophisticated and use LSTMs (Flair Sentiment)
+    - apply the Sentiment analysis on extracted disaster and climate change related quotes
+    - describe and analyze the values returned to get better insight in how the model performs
+    - use returned values to determine if certain groups of politicians have positive or negative stances towards climate change
+    - feasibility
+      - To get the most accurate sentiment prediction the input text should be of an adequate form i.e. it should we long enough yet not too long (short sentences are either impactful or do not yield enough information) when filtering inadequate sentence we should be careful not to introduce bias
+
 
 ## Proposed timeline
 This project should be completed by December 17th. Our proposed timeline can be found in the table below:
