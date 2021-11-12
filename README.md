@@ -45,8 +45,8 @@ Given that the Quotebank dataset comprises a huge amount of quotes, it is crucia
 <br>
 This is feasible by:
 
-- removing unnecessary speakers from the `.parquet` file
-- merging the `.parquet` file with the Quotebank dataset
+- extracting necessary speakers from the `.parquet` file
+- merging extracted speakers with the Quotebank dataset
 
 ## Methods
 In this section, we will give an overview of the processing that needs to be done after preprocessing the data but before the data analysis part. Moreover, we will explain the problem-solving process as well as the feasibility of each task.
@@ -133,10 +133,11 @@ Our team consists of four members. We intend to work on every milestone in pairs
 ### `preprocessing`
 This folder contains all the preprocessing work performed on the input data - both the speakers and quotes are preprocessed.
 <br><br>Files:
-- [`Wikidata_preprocessing.ipynb`](./preprocessing/Wikidata_preprocessing.ipynb)
-    - handles preprocessing of speakers using Wikidata
-- [`Quotebank_preprocessing.ipynb`](./preprocessing/Quotebank_preprocessing.ipynb)
-    - handles preprocessing of quotes from Quotebank
+- [`Wikidata_preprocessing.ipynb`](./preprocessing/Wikidata_preprocessing.ipynb) - handles preprocessing of speakers using Wikidata
+    - extracting alive politicians that were affiliated with The Republican or The Democratic party during the period 2015-2020.
+- [`Quotebank_preprocessing.ipynb`](./preprocessing/Quotebank_preprocessing.ipynb) - handles preprocessing of quotes from Quotebank
+    - extracting quotes that match with the speakers extracted in Wikidata_preprocessing
+    - dropping empty or duplicate quotes
 
 ## Authors
 - Carevic Filip
