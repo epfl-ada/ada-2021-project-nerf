@@ -66,8 +66,9 @@ Processing that needs to be done:
     - apply the Sentiment analysis on extracted disaster and climate change-related quotes
     - describe and analyze the values returned to get a better insight into how the model performs
     - use returned values to determine if certain groups of politicians have positive or negative stances towards climate change
+    <br><br>
     - feasibility
-      - To get the most accurate sentiment prediction the input text should be of an adequate form i.e. it should be long enough yet not too long (short sentences are either impactful or do not yield enough information) when filtering inadequate sentences we should be careful not to introduce bias
+      - To get the most accurate sentiment prediction the input text should be of an adequate form i.e. it should be long enough yet not too long (short sentences are either impactful or do not yield enough information) when filtering inadequate sentences we should be careful not to introduce bias.
 
 
 ## Proposed timeline
@@ -130,7 +131,12 @@ Our team consists of four members. We intend to work on every milestone in pairs
 
 ## Navigating the repo
 ### `preprocessing`
-- This folder contains all the preprocessing work performed on the input data - both the speakers and quotes are preprocessed.
+This folder contains all the preprocessing work performed on the input data - both the speakers and quotes are preprocessed.
+<br><br>Files:
+- [`Quotebank_preprocessing.ipynb`](./preprocessing/Quotebank_preprocessing.ipynb)
+    - handles preprocessing of quotes from Quotebank
+- [`Wikidata_preprocessing.ipynb`](./preprocessing/Wikidata_preprocessing.ipynb)
+    - handles preprocessing of speakers using Wikidata
 
 ## Authors
 - Carevic Filip
