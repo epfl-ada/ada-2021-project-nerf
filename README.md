@@ -133,10 +133,10 @@ Our team consists of four members. We intend to work on every milestone in pairs
 ### `preprocessing`
 This folder contains all the preprocessing work performed on the input data - both the speakers and quotes are preprocessed.
 <br><br>Files:
-- [`Quotebank_preprocessing.ipynb`](./preprocessing/Quotebank_preprocessing.ipynb)
-    - handles preprocessing of quotes from Quotebank
 - [`Wikidata_preprocessing.ipynb`](./preprocessing/Wikidata_preprocessing.ipynb)
     - handles preprocessing of speakers using Wikidata
+- [`Quotebank_preprocessing.ipynb`](./preprocessing/Quotebank_preprocessing.ipynb)
+    - handles preprocessing of quotes from Quotebank
 
 ## Authors
 - Carevic Filip
