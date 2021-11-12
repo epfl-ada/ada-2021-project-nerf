@@ -68,7 +68,8 @@ Processing that needs to be done:
     - use returned values to determine if certain groups of politicians have positive or negative stances towards climate change
     <br><br>
     - feasibility
-      - To get the most accurate sentiment prediction the input text should be of an adequate form i.e. it should be long enough yet not too long (short sentences are either impactful or do not yield enough information) when filtering inadequate sentences we should be careful not to introduce bias.
+      - To get the most accurate sentiment prediction the input text should be of an adequate form i.e. it should be long enough yet not too long (short sentences are either impactful or do not yield enough information) luckily the extraction process yields enough diversity that we should be able to filter adequate quotes for such an analysis, however we must be careful to not introduce bias into our analysis by doing this.
+      - Moreover after manually testing sentiment analysis models we can see that they will be very useful in answering some questions
 
 
 ## Proposed timeline
