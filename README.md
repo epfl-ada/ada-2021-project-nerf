@@ -12,6 +12,7 @@ The purpose of this file is to explain the project and help you navigate this re
 - [Proposed timeline](#proposed-timeline)
 - [Organization within the team](#organization-within-the-team)
 - [Navigating the repo](#navigating-the-repo)
+- [Data story](#data-story)
 - [Authors](#authors)
 
 ## Abstract
@@ -64,7 +65,7 @@ Processing that needs to be done:
     - As a prerequisite for this extraction, we need to ensure that there are enough quotes for training the model. After extracting all the speakers and their quotes that we need for our analysis we gathered an astonishing number of over 5 million quotes - which should be more than enough.
     - In addition to this, there should also be plenty of climate change quotes in order to have sufficient data for further analysis. With a simple regex search for _climate change_, we can see a decent number of quotes. It is only natural to assume that a trained model would provide us with even more and better quotes than a regex search.<br><br>
 - sentiment analysis of climate change quotes:
-    - determine a sentiment with pretrained model from `Huggingface`
+    - determine a sentiment with pretrained `distil BERT model` from **Huggingface**
     - get values between -1 and 1 where negative values represent negative sentiment and vice cersa
     - apply the Sentiment analysis on extracted disaster and climate change-related quotes
     - describe and analyze the values returned to get a better insight into how the model performs
@@ -161,6 +162,8 @@ This folder contains all the preprocessing work performed on the input data - bo
         - classify quote on 17 classes of different misinformation
 - [`ADAlysis.ipynb`](./ADAlysis.ipynb) - the main file, contains all the details of our ADAlysis
 
+## Data story
+On the following link you can find the whole data story about our project: https://teamnerf.github.io/ADA_Data_Story (reading time: 15 min)
 ## Authors
 - Carevic Filip
 - Maid Edvin
