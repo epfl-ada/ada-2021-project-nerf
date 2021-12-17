@@ -49,6 +49,7 @@ This is feasible by:
 - extracting necessary speakers from the `.parquet` file
 - merging extracted speakers with the Quotebank dataset
 
+Due to the size of the data files, we decided to keep them on a private drive. If you want to access the data itself, please contact us.
 ## Methods
 In this section, we will give an overview of the processing that needs to be done after preprocessing the data but before the data analysis part. Moreover, we will explain the problem-solving process as well as the feasibility of each task.
 <br><br>
@@ -56,24 +57,24 @@ Processing that needs to be done:
 - extraction of climate change quotes:
     - firstly, training a model using `fasttext` with _unsupervised_ learning
         - generating word embeddings from the model 
-        - calculating similarity between the **"climate change"** query vector and the aggregated quotes vectors
+        - calculating the similarity between the **"climate change"** query vector and the aggregated quotes vectors
         - extraction of most similar quotes based on a threshold <br><br>
-    - sedondly, training a `distilled BERT` _supervised_ model for sequence classification
+    - secondly, training a `distilled BERT` _supervised_ model for sequence classification
         - getting the probability of a quote being related to climate change
-        - taking out quotes with probability higher than certain threshold
+        - taking out quotes with probability higher than a certain threshold
 - feasibility
     - As a prerequisite for this extraction, we need to ensure that there are enough quotes for training the model. After extracting all the speakers and their quotes that we need for our analysis we gathered an astonishing number of over 5 million quotes - which should be more than enough.
-    - In addition to this, there should also be plenty of climate change quotes in order to have sufficient data for further analysis. With a simple regex search for _climate change_, we can see a decent number of quotes. It is only natural to assume that a trained model would provide us with even more and better quotes than a regex search.<br><br>
+    - In addition to this, there should also be plenty of climate change quotes to have sufficient data for further analysis. With a simple regex search for _climate change_, we can see a decent number of quotes. It is only natural to assume that a trained model would provide us with even more and better quotes than a regex search.<br><br>
 - sentiment analysis of climate change quotes:
     - determine a sentiment with pretrained `distil BERT model` from **Huggingface**
-    - get values between -1 and 1 where negative values represent negative sentiment and vice cersa
+    - get values between -1 and 1 where negative values represent negative sentiment and vice versa
     - apply the Sentiment analysis on extracted disaster and climate change-related quotes
     - describe and analyze the values returned to get a better insight into how the model performs
     - use returned values to determine if certain groups of politicians have positive or negative stances towards climate change
     <br><br>
 - feasibility
-  - To get the most accurate sentiment prediction the input text should be of an adequate form i.e. it should be long enough yet not too long (short sentences are either impactful or do not yield enough information) luckily the extraction process yields enough diversity that we should be able to filter adequate quotes for such an analysis, however we must be careful to not introduce bias into our analysis by doing this.
-  - Moreover after manually testing sentiment analysis models we can see that they will be very useful in answering some questions
+  - To get the most accurate sentiment prediction the input text should be of an adequate form i.e. it should be long enough yet not too long (short sentences are either impactful or do not yield enough information) luckily the extraction process yields enough diversity that we should be able to filter adequate quotes for such an analysis, however, we must be careful to not introduce bias into our analysis by doing this.
+  - Moreover, after manually testing sentiment analysis models we can see that they will be very useful in answering some questions
 
 
 ## Proposed timeline
@@ -148,18 +149,18 @@ This folder contains all the preprocessing work performed on the input data - bo
     - cleaning data with some "bag of trick" before training
     - training the model for word embeddings with "cbow" model
     - getting threshold regarding ClimaText dataset
-    - exracting most smiliar quotes based on threshold
+    - extracting most similar quotes based on threshold
 - [`ClimaTextBERT.ipynb`](./ClimaTextBERT.ipynb) - taking climate change quotes based of distilled BERT supervised model
     - training the model BERT model
-    - evaulating the model with ClimaText dataset
-    - exracting quotes using our model
+    - evaluating the model with ClimaText dataset
+    - extracting quotes using our model
 - [`Enrichment.ipynb`](./Enrichment.ipynb) - in this notebook is provided all additional features
     - sentiment analysis
         - distil BERT model for sentiment analysis
         - state-of-the-art performance of ~93% accuracy
     - claims misinformation prediction using CARDS
         - model based on RoBERTa architecture
-        - classify quote on 17 classes of different misinformation
+        - classify quotes on 17 classes of different misinformation
 - [`ADAlysis.ipynb`](./ADAlysis.ipynb) - the main file, contains all the details of our ADAlysis
 
 ## Data story
